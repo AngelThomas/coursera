@@ -34,7 +34,7 @@
             </ul>
             <span class="navbar-text">
                 <!--<a data-toggle="modal" data-target="#loginModal"> -->
-                <a id="loginDlg">
+                <a id="loginLink">
                     <span class="fa fa-sign-in"></span>Login
                 </a>
             </span>
@@ -47,7 +47,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">
+                    <button type="button" class="close" data-dismiss="modal" id="closeLoginModal">
                         &times;
                     </button>
                 </div>
@@ -85,7 +85,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" style="color:black">Reserve Table</h4>
-                    <button type="button" class="close" data-dismiss="modal">
+                    <button type="button" class="close" data-dismiss="modal" id="closeReserveModal">
                         &times;
                     </button>
                 </div>
@@ -286,7 +286,7 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
-            $('#loginDlg').on('click', function(event) {
+            $('#loginLink').on('click', function(event) {
                 $('#loginModal').modal('show');
                 // alert("Login was clicked.");
             });
