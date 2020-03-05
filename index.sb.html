@@ -294,6 +294,12 @@
                 $('#reserveModal').modal('show');
                 // alert("Login was clicked.");
             });
+            $('#closeLoginModal').on('click', function(event) {
+                $('#loginModal').modal('hide');
+            });
+            $('#closeReserveModal').on('click', function(event) {
+                $('#reserveModal').modal('hide');
+            });
         });
     </script>
 </body>
